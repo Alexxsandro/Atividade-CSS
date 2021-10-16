@@ -307,8 +307,8 @@ button img{
 .product-specifications-wrapper h2{
     color: rgb(58, 57, 57);
 }
-.novo_hr{
-    width: 800px;
+.novo_hr {
+    width: 200px;
     margin-left: 0px;
     margin-right: 50px;
 }
@@ -364,7 +364,8 @@ tr td{
         width: 80%;
     }
     .produtos_vitrine{
-        margin-top: 50px;
+        margin-top: 60px;
+        margin-bottom: 20px;
         margin-left: -750px;
         padding: 0;
         display: flex;
@@ -425,11 +426,12 @@ tr td{
         grid-template-columns: 80px 300px;
         grid-template-areas: "vitrine   vitrine   vitrine"
                               "preco    preco      preco ";
-    }
+        }
     .main{
         width: 80%;
         margin: 0 auto;
-        margin-right: 50px;
+        margin-right: 40px;
+        overflow: hidden;
     }
     .produtos_vitrine{
         display: none;
@@ -438,6 +440,7 @@ tr td{
     .esconder_h1{
         display: block;
         text-align: left;
+        font-size: 18px;
     }
     .product-title{
         display: none;
@@ -461,7 +464,7 @@ tr td{
     .container_vitrine img{
         text-align: center;
         margin: 20px auto;
-        margin-left: 75px;
+        margin-left: 20%;
         width: 60%;
         height: 70%;
         padding-right: 10px;
@@ -516,6 +519,15 @@ tr td{
         font-size: 17px;
         display: inline-block;
         padding-bottom: 10px;
+    }
+    .container_price_car{
+        width: 300px;
+    }
+    .container_price{
+        width: 300px;
+    }
+    #btn_cep{
+        width: 130px;
     }
    
    
