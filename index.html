@@ -11,70 +11,125 @@
 </head>
 
 <body>
+  <header class="header">
+      <img src="assets/logo.png" alt="logo">
+  </header>
   <div class="main">
     <div class="product-info-wrapper">
       <div class="product-images">
-        <img height="200" src="./assets/1.jpg" alt="product-image">
-        <img height="200" src="./assets/2.jpg" alt="product-image">
-        <img height="200" src="./assets/3.jpg" alt="product-image">
-        <img height="200" src="./assets/4.jpg" alt="product-image">
-        <img height="200" src="./assets/5.jpg" alt="product-image">
-        <img height="200" src="./assets/6.jpg" alt="product-image">
-        <img height="200" src="./assets/7.jpg" alt="product-image">
+         <div class="container container_position_1">
+            <a href="#"><img src="assets/2.jpg"></a>
+         </div>
+         <div class="container container_position_2">
+            <a href="#"><img src="assets/3.jpg"></a>
+         </div>
+         <div class="container container_position_3">
+            <a href="#"><img src="assets/4.jpg"></a>
+         </div>
+         <div class="container container_position_4">
+            <a href="#"><img src="assets/5.jpg"></a>
+        </div>
+      </div>
+      
+      <div class="container_vitrine">
+        <h1 class="esconder_h1">Smartphone Mi 11 Lite 128gb 6gb RAM</h1>
+        <span class="topo_container_span">Marca: <span class="destaque_orange"><strong>Xiaomi</strong></span></span>
+        <img src="assets/1.jpg" alt="vitrini">
       </div>
 
       <div class="product-content">
         <div class="product-heading">
           <h1 class="product-title">Smartphone Mi 11 Lite 128gb 6gb RAM</h1>
-          <p class="product-variant">Boba Black - Preto</p>
-          <p class="product-brand">Marca: Xiaomi</p>
+          <span class="container_topo">Boba Black - Preto</span>
+          <span class="container_topo1">Marca: <span class="destaque_orange">Xiaomi</span></span>
+          <hr>
         </div>
 
         <div class="product-prices">
           <div class="was-price">
-            <span>De: </span> <del>R$ 2.699,00</del>
+            <span>De: </span> <del class="destaque_orange">R$ 2.699,00</del>
           </div>
           <div class="is-price">
-            <span>Por: </span> <span>R$ 2.500,00</span>
+            <span>Por: </span> <span class="destaque_orange">R$ 2.500,00</span>
           </div>
-          <p>
+          <p class="paragrafo_neglito">
             Em até <span>10x</span> de R$ 250,00 sem juros
           </p>
         </div>
 
         <div class="product-buy-section">
           <div class="product-quantity">
-            <button>-</button>
-            <input type="number" />
-            <button>+</button>
+            <span>Quantidade: </span>
+            <input type="number" id="input_number" placeholder="1"/>
+            
           </div>
           <div class="product-buy-button">
-            <button>
-              <img height="20" width="20" src="./assets/shopping-cart.png" alt="cart-image">
-              Comprar
+            <button class="container_price_car">
+              <img height="25" width="25"  src="./assets/shopping-cart.png" alt="cart-image">
+              <span class="align">Adicionar ao carrinho</span>
+            </button>
+            <button class="container_price">
+              <img height="25" width="25"  src="./assets/shopping-cart.png" alt="cart-image">
+              <span class="align">Comprar agora</span>
             </button>
           </div>
         </div>
 
         <div class="product-freight">
-          <h2>
+          <h2 class="consulta_cep">
             <img width="32" height="32" src="./assets/truck.png" alt="truck-freight">
-            <span>Consultar prazo e valor do frete</span>
+            <span class="consulta_prazo_cep">Consultar prazo e valor do frete</span>
           </h2>
           <div>
-            <div>
-              <input type="text" placeholder="00000000" type="number" maxlength="8">
-              <button>Ok</button>
+            <div class="btn_input_cep">
+              <input type="text" id="btn_cep" placeholder="digite o cep" type="number" maxlength="8">
+              <button class="botao_cep_ok">Ok</button>
             </div>
-            <a href="http://www.buscacep.correios.com.br/sistemas/buscacep/" rel="noreferrer" target="_blank">
+            <a href="http://www.buscacep.correios.com.br/sistemas/buscacep/" rel="noreferrer" target="_blank" class="link_baixo_cep">
               Não sei o CEP</a>
           </div>
+          
         </div>
+       
       </div>
+      
+      <div class="produtos_vitrine">
+        
+        <div class="produto_anuncio">
+          <img src="assets/2.jpg" alt="">
+        </div>
+        <span class="contate">+</span>
+        <div class="produto_anuncio">
+          <img src="assets/3.jpg" alt="">
+        </div>
+        <span class="preco_total"><strong>Preço:</strong><span class="orange"> R$ 3.000,00</span></span>
+        <button class="btn">Adicionar ao carrinho</button>
+        
+    
+      </div>
+    </div>
+    <div class="imagem_mobile">
+      <img src="assets/2.jpg">
+    </div>
+    <div class="imagem_mobile">
+      <img src="assets/3.jpg">
+    </div>
+    <div class="imagem_mobile">
+      <img src="assets/4.jpg">
+    </div>
+    <div class="imagem_mobile">
+      <img src="assets/5.jpg">
+    </div>
+    <div class="imagem_mobile1">
+      <img src="assets/6.jpg">
+    </div>
+    <div class="imagem_mobile2">
+      <img src="assets/7.jpg">
     </div>
 
     <div class="product-specifications-wrapper">
       <h2>Detalhes Técnicos</h2>
+      <hr class="novo_hr">
       <table id="techical-details" class="techical-details" role="presentation">
         <tbody>
           <tr>

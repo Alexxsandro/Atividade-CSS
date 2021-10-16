@@ -1,3 +1,523 @@
 @import './product.css';
 @import './footer.css';
 @import './global.css';
+
+/*  Header  */
+
+.header{
+    width: 100%;
+    background-color: black;
+    height: 80px;
+    margin-bottom: 20px;
+  
+}
+
+.header img{
+    width: 150px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+/* --- Fim Header ---*/
+
+/* Main */
+
+.main{
+    width: 100%;
+    margin-left: 100px;
+}
+
+/* --- Fim Main --- */
+
+/* product-info-wrapper */
+
+.product-info-wrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 80px 300px 1fr 1fr;
+    grid-template-areas: "imagemPequena vitrine preco anuncio";
+}
+.product-images img{
+    width: 40%;
+}
+.product-images{
+    width: 80px;
+    padding-right: 50px;
+    grid-area: imagemPequena;
+    z-index: 10;
+}
+.container{
+    width: 5em;
+    height: 80px;
+    border: 2px solid #ccc;
+    margin-top: 15px;
+    box-shadow: 1px 1px 3px rgb(128, 128, 128);
+    z-index: 100px;
+    clear: right;
+    
+}
+.container img{
+    max-width: 50%;
+    height: 73.34px;
+    display: block;
+    margin: 2px auto;
+    padding: 0px;
+    z-index: 20;
+}
+.container:hover{
+    border-color:rgb(103, 104, 175);
+}
+.container_position_1:hover:after{
+    content: "";
+    display: block;
+    width: 300px;
+    height: 350px;
+    margin-left: 90px;
+    margin-top: -70px;
+    background-color: #fff;;
+    background-image: url('../assets/2.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 1000;
+}
+.container_position_2:hover:after{
+    content: "";
+    display: block;
+    width: 300px;
+    height: 350px;
+    margin-left: 90px;
+    margin-top: -170px;
+    background-color: #fff;
+    background-image: url('../assets/3.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 1000;
+
+}
+.container_position_3:hover:after{
+    content: "";
+    display: block;
+    width: 300px;
+    height: 350px;
+    margin-left: 90px;
+    margin-top: -260px;
+    background-color: #fff;
+    background-image: url('../assets/4.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 1000;
+
+}
+.container_position_4:hover:after{
+    content: "";
+    display: block;
+    width: 300px;
+    height: 350px;
+    margin-left: 90px;
+    margin-top: -360px;
+    background-color: #fff;
+    background-image: url('../assets/5.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 1000;
+}
+.consulta_prazo_cep{
+    font-size: 18px;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+.consulta_cep{
+    margin-top: -10px;
+}
+#btn_cep{
+    padding: 8px;
+    font-size: 16px
+}
+#btn_cep:focus{
+    border-color:rgb(0, 0, 0)
+}
+.btn_input_cep{
+    margin-top: -20px;
+}
+.botao_cep_ok{
+    padding: 8px;
+    font-size: 16px;
+    border-color: rgb(59, 59, 59);
+    color:rgb(0, 0, 0);
+    margin-bottom: 5px;
+}
+.botao_cep_ok:hover{
+    color:#000;
+    background-color: rgb(8, 126, 8);
+}
+
+.container_topo{
+    display: inline-block;
+    margin-top: -100px;
+    margin-bottom: 10px;
+}
+hr{
+    background-color: rgb(185, 179, 179);
+    width: 380px;
+    margin-left: -0px;
+    margin-top: -5px;
+    margin-bottom: 20px;
+}
+.container_vitrine{
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 0px;
+    grid-area: vitrine;/* --2-- */
+}
+.container_vitrine img{
+    display: block;
+    width: 280px;
+    height: 300px;
+    margin-top: 25px;
+}
+.product-content{
+    width: 100%;
+    display: block;
+    margin-top: -10px;
+    margin-right: 20px;
+    padding: 0;
+    margin-left: 35px;
+    grid-area: preco;
+}
+.product-title{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+.product-heading{
+    width: 100%;
+}
+.destaque_orange{
+    color:peru;
+}
+.paragrafo_neglito{
+    font-weight: bold;
+}
+#input_number{
+    width: 40px;
+    margin-bottom: 10px;
+    border:1px solid rgb(211, 193, 193);
+}
+.input_text{
+    display: inline-block;
+    color: red;
+    margin-bottom: 10px;
+}
+button img{
+    display: inline-block;
+    margin-top: 2px;
+    position: relative;
+    top:7px; 
+}
+.container_price{
+    width: 200px;
+    height: 50px;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: rgb(149, 207, 101);
+    border-radius: 10px;
+    border-color: rgb(149, 207, 101);
+    box-shadow: 0 5px 5px #ccc;
+    
+}
+.container_price_car{
+    width: 200px;
+    height: 50px;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    border:2px solid rgb(221, 218, 63);
+    box-shadow: 0 3px 3px rgb(197, 179, 179);
+    transition:background linear 0.2s;
+    margin-bottom: 20px;
+}
+.container_price_car:hover{
+    background-color:rgb(221, 218, 63);
+}
+.container_price:hover{
+    background-color: rgb(56, 163, 14);
+}
+.produtos_vitrine{
+     margin-left: 20px;
+     margin-top: 10px;
+     grid-area: anuncio;
+}
+.produto_anuncio{
+    width: 150px;
+    margin-bottom: 5px;
+    height:150px;
+    border: 2px solid transparent;
+    box-shadow: 2px 2px 5px rgb(98, 96, 96);;
+}
+.produto_anuncio:hover{
+    cursor: pointer;
+}
+.produto_anuncio img{
+    max-width: 100%;
+    height: 150px;
+    padding-top: 5px;
+    padding-left: 35px;
+    padding-bottom: 5px;
+}
+.contate{
+    font-size: 25px;
+    margin-left: 60px;
+}
+.btn{
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    border:2px solid rgb(221, 218, 63);
+    box-shadow: 0 3px 3px rgb(197, 179, 179);
+    transition:background linear 0.2s;
+}
+.btn:hover{
+    background-color: rgb(221, 218, 63);
+    border-color:rgb(221, 218, 63);
+}
+.preco_total{
+    font-size: 15px;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/*------ Tabela ------*/
+.product-specifications-wrapper{
+    width: 100%;
+    margin: 0 auto;
+    
+    
+}
+#techical-details{
+    text-align: left;
+}
+.product-specifications-wrapper h2{
+    color: rgb(58, 57, 57);
+}
+.novo_hr{
+    width: 800px;
+    margin-left: 0px;
+    margin-right: 50px;
+}
+.novo_hr1{
+    margin-top: 10px;
+    width: 700px;
+}
+.esconder_h1{
+    display: none;
+}
+.topo_container_span{
+    display: none;
+}
+.imagem_mobile{
+    display: none;
+}
+
+
+/* Tabela */
+#techical-details tbody{
+    width: 100%;
+    font-size: 16px;
+}
+tr th{
+    padding: 10px;
+    border-bottom: 2px solid rgb(226, 224, 224);
+    color: rgb(85, 80, 80);
+}
+tr td{
+    padding: 10px;
+    border-bottom: 2px solid rgb(226, 224, 224);
+    color: rgb(85, 80, 80);
+}
+.imagem_mobile1{
+    display: none;
+}
+.imagem_mobile2{
+    display: none;
+}
+
+
+/* ------------- Media ---------- */
+
+
+@media screen and (max-width:1200px){
+    .product-info-wrapper{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 80px 300px 1fr;
+        grid-template-areas: "imagemPequena vitrine preco"; 
+    }
+    hr{
+        width: 80%;
+    }
+    .produtos_vitrine{
+        margin-top: 50px;
+        margin-left: -750px;
+        padding: 0;
+        display: flex;
+    }
+    .produtos_vitrine::after{
+         content: 'Frequentemente comprados juntos';
+         font-size: 20px;
+         font-weight: bold;
+         margin-top: -30px;
+         margin-left: -500px;
+    }
+    .consulta_cep img{
+        display: none;
+    }
+    .consulta_cep{
+        margin-top: 10px;
+    }
+    .contate{
+        margin-top: 60px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .preco_total{
+        margin-left: 30px;
+        margin-top: 30px;
+        display:block;
+        flex-direction: column;
+    }
+    .btn{
+        display: flex;
+        width: 140px;
+        margin-top: 60px;
+        margin-left: -129px;
+    }
+    .main{
+        margin-left: 50px;
+    }
+    .product-content{
+        width: 70%;
+        margin-top: -10px;
+        margin-right: 20px;
+        padding: 0;
+        margin-left: 5%;
+        grid-area: preco;
+    }
+    .h1_vai_esconder{
+        display: none;
+    }
+    
+}
+@media screen and (max-width:785px){
+    body{
+        background-color: rgb(255, 254, 254);
+    }
+    .product-info-wrapper{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 80px 300px;
+        grid-template-areas: "vitrine   vitrine   vitrine"
+                              "preco    preco      preco ";
+    }
+    .main{
+        width: 80%;
+        margin: 0 auto;
+        margin-right: 50px;
+    }
+    .produtos_vitrine{
+        display: none;
+      
+    }
+    .esconder_h1{
+        display: block;
+        text-align: left;
+    }
+    .product-title{
+        display: none;
+    }
+    .container_topo1{
+        display: none;
+    }
+    .topo_container_span{
+        margin-top: -10px;
+        display: block;
+        text-align: left;
+    }
+    .container_topo{
+        display: inline-block;
+        margin-top: 20px;
+    }
+    .container_vitrine{
+        margin-bottom: 20px;
+        margin-left: -0px;
+    }
+    .container_vitrine img{
+        text-align: center;
+        margin: 20px auto;
+        margin-left: 75px;
+        width: 60%;
+        height: 70%;
+        padding-right: 10px;
+    }
+    .product-images{
+        display: none;
+    }
+    .header img{
+        display: block;
+        padding-top: 5px;
+        margin:0 auto;
+    }
+    .esconder_h1{
+        font-size: 25px;
+        color: #0f1111;
+    }
+    .container_price_car{
+        width: 350px;
+    }
+    .container_price{
+        width: 350px;
+    }
+    .imagem_mobile{
+        display: block;
+    }
+    .imagem_mobile img{
+         width: 40%;
+         height: 30%;
+         margin-bottom: 10px;
+         margin-top: 20px;
+         margin-left: 100px;
+    }
+    .imagem_mobile1{
+        display: block;
+    }
+    .imagem_mobile2{
+        display: block;
+    }
+    .imagem_mobile1 img{
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+    }
+    .imagem_mobile2 img{
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .consulta_prazo_cep{
+        font-size: 17px;
+        display: inline-block;
+        padding-bottom: 10px;
+    }
+   
+   
+
+}
