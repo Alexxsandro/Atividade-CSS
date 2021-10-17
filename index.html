@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -7,36 +7,34 @@
   <meta name="description" content="Desafio de CSS Enext">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/index.css">
-  <title>Document</title>
+  <title>Atividade CSS</title>
 </head>
 
 <body>
-  <header class="header">
-      <a href="index.html"><img src="assets/logo.png" alt="logo"></a>
-  </header>
-  <div class="main">
+  <header class="header"><!-- Inicio Header -->
+    <a href="index.html"><img src="assets/logo.png" alt="logo"></a>
+  </header><!-- Fim Header -->
+  <main class="main"><!-- Inicio Main -->
     <div class="product-info-wrapper">
       <div class="product-images">
-         <div class="container container_position_1">
-            <a href="#"><img src="assets/2.jpg"></a>
-         </div>
-         <div class="container container_position_2">
-            <a href="#"><img src="assets/3.jpg"></a>
-         </div>
-         <div class="container container_position_3">
-            <a href="#"><img src="assets/4.jpg"></a>
-         </div>
-         <div class="container container_position_4">
-            <a href="#"><img src="assets/5.jpg"></a>
+        <div class="container container_position_1">
+          <a href="#"><img src="assets/2.jpg" alt="Smartphone Xiaomi"></a>
+        </div>
+        <div class="container container_position_2">
+          <a href="#"><img src="assets/3.jpg" alt="Smartphone Xiaomi"></a>
+        </div>
+        <div class="container container_position_3">
+          <a href="#"><img src="assets/4.jpg" alt="Smartphone Xiaomi"></a>
+        </div>
+        <div class="container container_position_4">
+          <a href="#"><img src="assets/5.jpg" alt="Smartphone Xiaomi"></a>
         </div>
       </div>
-      
       <div class="container_vitrine">
         <h1 class="esconder_h1">Smartphone Mi 11 Lite 128gb 6gb RAM</h1>
         <span class="topo_container_span">Marca: <span class="destaque_orange"><strong>Xiaomi</strong></span></span>
         <img src="assets/1.jpg" alt="vitrini">
       </div>
-
       <div class="product-content">
         <div class="product-heading">
           <h1 class="product-title">Smartphone Mi 11 Lite 128gb 6gb RAM</h1>
@@ -44,7 +42,6 @@
           <span class="container_topo1">Marca: <span class="destaque_orange">Xiaomi</span></span>
           <hr>
         </div>
-
         <div class="product-prices">
           <div class="was-price">
             <span>De: </span> <del class="destaque_orange">R$ 2.699,00</del>
@@ -56,25 +53,22 @@
             Em até <span>10x</span> de R$ 250,00 sem juros
           </p>
         </div>
-
         <div class="product-buy-section">
           <div class="product-quantity">
             <span>Quantidade: </span>
-            <input type="number" id="input_number" placeholder="1"/>
-            
+            <input type="number" id="input_number" placeholder="1" />
           </div>
           <div class="product-buy-button">
             <button class="container_price_car">
-              <img height="25" width="25"  src="./assets/shopping-cart.png" alt="cart-image">
+              <img height="25" width="25" src="./assets/shopping-cart.png" alt="cart-image">
               <span class="align">Adicionar ao carrinho</span>
             </button>
             <button class="container_price">
-              <img height="25" width="25"  src="./assets/shopping-cart.png" alt="cart-image">
+              <img height="25" width="25" src="./assets/shopping-cart.png" alt="cart-image">
               <span class="align">Comprar agora</span>
             </button>
           </div>
         </div>
-
         <div class="product-freight">
           <h2 class="consulta_cep">
             <img width="32" height="32" src="./assets/truck.png" alt="truck-freight">
@@ -82,52 +76,46 @@
           </h2>
           <div>
             <div class="btn_input_cep">
-              <input type="text" id="btn_cep" placeholder="digite o cep" type="number" maxlength="8">
+              <input type="text" id="btn_cep" placeholder="digite o cep"  maxlength="8">
               <button class="botao_cep_ok">Ok</button>
             </div>
-            <a href="http://www.buscacep.correios.com.br/sistemas/buscacep/" rel="noreferrer" target="_blank" class="link_baixo_cep">
+            <a href="http://www.buscacep.correios.com.br/sistemas/buscacep/" rel="noreferrer" target="_blank"
+              class="link_baixo_cep">
               Não sei o CEP</a>
           </div>
-          
         </div>
-       
       </div>
-      
-      <div class="produtos_vitrine">
-        
+      <aside class="produtos_vitrine">
         <div class="produto_anuncio">
-          <img src="assets/2.jpg" alt="">
+          <img src="assets/2.jpg" alt="Smartphone Xiaomi">
         </div>
         <span class="contate">+</span>
         <div class="produto_anuncio">
-          <img src="assets/3.jpg" alt="">
+          <img src="assets/3.jpg" alt="Smartphone Xiaomi">
         </div>
         <span class="preco_total"><strong>Preço:</strong><span class="orange"> R$ 3.000,00</span></span>
         <button class="btn">Adicionar ao carrinho</button>
-        
-    
-      </div>
+      </aside>
     </div>
     <div class="imagem_mobile">
-      <img src="assets/2.jpg">
+      <img src="assets/2.jpg" alt="Smartphone Xiaomi">
     </div>
     <div class="imagem_mobile">
-      <img src="assets/3.jpg">
+      <img src="assets/3.jpg" alt="Smartphone Xiaomi">
     </div>
     <div class="imagem_mobile">
-      <img src="assets/4.jpg">
+      <img src="assets/4.jpg" alt="Smartphone Xiaomi">
     </div>
     <div class="imagem_mobile">
-      <img src="assets/5.jpg">
+      <img src="assets/5.jpg" alt="Smartphone Xiaomi">
     </div>
     <div class="imagem_mobile1">
-      <img src="assets/6.jpg">
+      <img src="assets/6.jpg" alt="Smartphone Xiaomi">
     </div>
     <div class="imagem_mobile2">
-      <img src="assets/7.jpg">
+      <img src="assets/7.jpg" alt="Smartphone Xiaomi">
     </div>
-
-    <div class="product-specifications-wrapper">
+    <section class="product-specifications-wrapper"><!-- Inicio Section -->
       <h2>Detalhes Técnicos</h2>
       <hr class="novo_hr">
       <table id="techical-details" class="techical-details" role="presentation">
@@ -262,18 +250,16 @@
           </tr>
         </tbody>
       </table>
-    </div>
-  </div>
-
-  <footer>
-    <div>
+    </section><!-- Fim Section -->
+  </main><!-- Fim Main -->
+  <footer class="footer">
+    <div class="container_footer">
       <p>Capacitação Enext 2021</p>
       <div>
         <img width="120" src="./assets/logo.png" alt="logo-enext">
       </div>
     </div>
   </footer>
-
- 
 </body>
+
 </html>

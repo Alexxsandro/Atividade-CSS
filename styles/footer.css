@@ -1,4 +1,4 @@
-footer {
+.footer {
   background: #000;
   color: #fff;
   display: flex;
@@ -6,14 +6,12 @@ footer {
   padding: 2rem;
   margin-top: 2.5rem;
 }
-
-footer > div {
+.footer > .container_footer {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
-
-footer > div p {
+.footer > .container_footer p {
   font-size: 1rem;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   cursor: default;
